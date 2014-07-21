@@ -1,8 +1,8 @@
-[color=#00BFFF]TES5Edit 3.0.31 EXPERIMENTAL by ElminsterAU. Updated for Skyrim by Hlp, Zilav and Sharlikran.[/color]
+[color=#00BFFF]TES5Edit 3.0.32 EXPERIMENTAL by ElminsterAU. Updated for Skyrim by Hlp, Zilav and Sharlikran.[/color]
 
 [color=#FF0000]This is the tenth update of TES5Edit and is still being updated.  However, it should still be considered experimental.  Make backups of your plugins and report any issues in the official Bethesda thread.  If you have never used TES5Edit, Wiki Pages and basic videos are available.
 
-We only support version 1.9 of Skyrim and version 3.0.31 of TES5Edit.  Update TES5Edit and Skyrim before you post in the forum.[/color]
+We only support version 1.9 of Skyrim and version 3.0.32 of TES5Edit.  Update TES5Edit and Skyrim before you post in the forum.[/color]
 
 Cleaning Plugins and Master Files - Mod Authors:
 [youtube]UOQO2S6HDBw[/youtube]
@@ -19,18 +19,19 @@ Making a Merge Patch
 [*] [url=http://www.creationkit.com/TES5Edit_Cleaning_Guide_-_TES5Edit]TES5Edit Cleaning Guide[/url]
 [*] [url=http://www.creationkit.com/TES5Edit_Mod_Cleaning_Tutorial]TES5Edit Mod Cleaning Tutorial[/url]
 [*] [url=http://www.creationkit.com/Skyrim_Dirty_Plugins_List]TES5Edit Skyrim Dirty Plugins List[/url]
+[*] [url=http://www.creationkit.com/TES5Edit_Scripting_Functions]TES5Edit Scripting Functions[/url] [Wip] - Thanks to Turulo for starting it.  Last update 10-13-2013 by Mator
 [/list]
 
 [color=#00BFFF]TES5Edit is now Available in Chinese:[/color]
-You can download the translation by [url=http://skyrim.nexusmods.com/users/2541088]bluesky404 [/url][url=http://www.nexusmods.com/skyrim/mods/37228]here[/url].
+You can download the translation by [url=http://skyrim.nexusmods.com/users/2541088]bluesky404 [/url][url=http://skyrim.nexusmods.com/mods/37228]here[/url].
 
-[url=http://forums.bethsoft.com/topic/1474325-relz-tes5edit/]Official Bethesda Forum[/url]: Best place to ask technical questions related to the inner workings of TES5Edit.
+[url=http://forums.bethsoft.com/topic/1490494-relz-tes5edit/]Official Bethesda Forum[/url]: Best place to ask technical questions related to the inner workings of TES5Edit.
 [url=http://forums.bethsoft.com/topic/1425445-relz-tes5edit-plugin-cleaning-emporium]TES5Edit Plugin Cleaning Emporium[/url]: Best place to ask questions related to cleaning plugins. Both modders and the closed beta testers post here often.
 
 [color=#00BFFF]Current Documentation:[/color]
 
-[url=http://www.nexusmods.com/fallout3/mods/8629]Fallout3 Training Manual[/url] for FO3Edit (applies to all game versions)
-[url=http://www.nexusmods.com/newvegas/mods/38413]FNVEdit Training Manual[/url] for FNVEdit (applies to all game versions)
+[url=http://fallout3.nexusmods.com/mods/8629]Fallout3 Training Manual[/url] for FO3Edit (applies to all game versions)
+[url=http://newvegas.nexusmods.com/mods/38413]FNVEdit Training Manual[/url] for FNVEdit (applies to all game versions)
 
 With the strains of real life there is no way for the TES5Edit team to update documentation.  If you would like to contribute to the conversion of the Fallout New Vegas documentation please visit the [url=http://www.creationkit.com/TES5Edit_Documentation]TES5Edit Documentation pages[/url] on the CK Wiki.  Your help is greatly appreciated.
 
@@ -66,7 +67,7 @@ As TES5Edit becomes more widely used in the Skyrim community it has become a con
 
 [color=#00BFFF]Merging Plugins:[/color]
 
-There is still a demand for merging multiple plugins but merging plugins is still unsupported directly from TES5Edit's UI.  There is a [url=http://www.nexusmods.com/skyrim/mods/37981]TES5Edit script by Matortheeternal[/url] for merging plugins.  Some mods cannot be successfully merged with it and you should direct all questions relating to the script to the author.  There is [url=http://forums.nexusmods.com/index.php?showtopic=1033740]a thread available[/url] where people have posted which plugins merge successfully or unsuccessfully.  For more info on ways to use TES5Edit to Merge Plugins check out [url=http://forums.nexusmods.com/index.php?/topic/904953-how-to-merge-multiple-mods-with-multiple-master-files]How To Merge Multiple Mods With Multiple Master Files[/url] and [url=http://forums.bethsoft.com/topic/1425724-merging-mods]Merging Mods[/url].  Otherwise if you intend on editing masses of entries, merging plugins, and creating compatibility patches for Skyrim overhauls please create your own separate thread.
+There is still a demand for merging multiple plugins but merging plugins is still unsupported directly from TES5Edit's UI.  There is a [url=http://skyrim.nexusmods.com/mods/37981]TES5Edit script by Matortheeternal[/url] for merging plugins.  Some mods cannot be successfully merged with it and you should direct all questions relating to the script to the author.  There is [url=http://forums.nexusmods.com/index.php?showtopic=1033740]a thread available[/url] where people have posted which plugins merge successfully or unsuccessfully.  For more info on ways to use TES5Edit to Merge Plugins check out [url=http://forums.nexusmods.com/index.php?/topic/904953-how-to-merge-multiple-mods-with-multiple-master-files]How To Merge Multiple Mods With Multiple Master Files[/url] and [url=http://forums.bethsoft.com/topic/1425724-merging-mods]Merging Mods[/url].  Otherwise if you intend on editing masses of entries, merging plugins, and creating compatibility patches for Skyrim overhauls please create your own separate thread.
 
 [color=#00BFFF]Trouble shooting plugins:[/color]
 
@@ -83,6 +84,32 @@ Contacting the mod authors is probably the last thing you should do after encoun
 We understand that sometimes updates to programs break things.  Please use the updates with caution.  However, please use them and then report issues so we can improve the program.  Our goal is to make all versions as bug free as possible and introduce new features that are useful for the modding community for all the Bethesda games this utility supports.
 
 [color=#00BFFF]TES5Edit Updates:[/color]
+
+[color=#00BFFF]Version 3.0.32 contains the following changes:[/color]
+
+- issue 69: automatic updating of counter fields to reflect the proper amount of elements in containers
+- issue 149: FormID indexes in master file header ONAM forms
+- issue 162: reference rotation angle normalization (TES4LODGen hanging on several mods)
+- hotkeys in plugins selection window (Enter - confirm, numpad '+' select all, '-' select none, '*' invert)
+- hold Shift while starting xEdit to skip restoring window state (for users stuck with xEdit outside of viewable desktop area)
+- hold Shift while clicking OK in plugins selection window for one time skipping of building references for all plugins
+- exclude building references for plugins list available in options
+- option to display integer values of flags and enumerations (off by default)
+- Ctrl+C copies only Node text to clipboard, Esc closes the View window
+- definitions update for all games to reduce false positives when checking for errors
+- custom scripted filtering, demo 'Apply custom scripted filter.pas'
+- new scripting functions and scripts: Weather Editor script (Ctrl+W), Worldspace Browser (Alt+F3)
+- scripted persistent bookmarking of records: Ctrl+1..5 to set a bookmark, Alt+1..5 to go back
+- removing offset data in WRLD is optional now, 'on' by default
+- [TES5] TES5LODGen (beta version, has several issues)
+- [TES5] renamed armor addon nodes (added slot numbers), please update your scripts if needed
+- [TES5] Record definitions update (WTHR, DOBJ, NAVM, VMAD papyrus data, GetEventData condition), improved NavMeshes (thanks to jonwd7)
+- [TES5] Added VMAD (papyrus scripts) to TREE, and LVLG (global) to LVLN. They can't be edited in CK, but it supports them and they confirmed to work in game
+- [TES4] Added XRGD subrecord to REFR, INFO flags update
+- [FO3] Do not remove PLD2 subrecord in PACK (as in FNV)
+- [FNV] BPTD update to support body parts without BPTN name
+- [FNV] Relocated CELL and WRLD groups at the end of file
+- [TES4/TES5/FO3/FNV] WRLD offset data OFST definition (when 'Simple records' option is off)
 
 [color=#00BFFF]Version 3.0.31 contains the following changes:[/color]
 
@@ -101,7 +128,7 @@ We understand that sometimes updates to programs break things.  Please use the u
 - [TES5] optional switch to resolve aliases (show ID and name)
 - [TES5] fixed error when copying PACK record
 - [TES5] 'Default' water height instead of '-2147483648.00000' is being added to CELLs with water but no XCLW subrecord
-- [TES5] renamed "WRLD\Object bounds" element, please update scripts if needed
+- [TES5] renamed "WRLDObject bounds" element, please update scripts if needed
 - [TES5] merged patch improvements and fixes
 - [TES4] updated INFO record definition to fix flags
 - [TES4] fixed PGRR subrecord corruption in pathgrids when saving
