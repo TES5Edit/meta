@@ -1,15 +1,16 @@
-﻿[size=5][color=#00BFFF][url=http://www.nexusmods.com/skyrim/mods/25859/]TES5Edit 3.0.32 EXPERIMENTAL[/url] is now available on the Nexus.[/color][/size]
+[size=5][color=#00BFFF][url=http://www.nexusmods.com/skyrim/mods/25859/]TES5Edit 3.0.32 EXPERIMENTAL[/url] is now available on the Nexus.[/color][/size]
  
 [size=4][color=#FF0000]This is the ninth update of TES5Edit and is still being updated. However, it should still be considered experimental. Make backups of your plugins and report any issues in the official Bethesda thread. If you have never used TES5Edit, Wiki Pages and basic videos are available. Feel free to ask about plugin cleaning in the official [color=#00BFFF][url=http://forums.bethsoft.com/topic/1425445-relz-tes5edit-plugin-cleaning-emporium/]RELz TES5Edit Plugin Cleaning Emporium[/url][/color]. If you require technical assistance the official [color=#00BFFF][url=http://forums.bethsoft.com/topic/1490494-relz-tes5edit/]RELz TES5Edit[/url][/color] thread is best for that. As always backup you plugins, save games, and use with caution. (at your own risk)[/color][/size]
  
 [size=4][color=#FF0000]NOTE: This is the actual version of FNVEdit, FO3Edit, and TES4Edit by ElminsterAU being updated for Skyrim. He has allowed us to host both TES5Dump and TES5Edit under the same MPL.[/color][/size]
  
-[size=4][color=#FF8C00]TES5Edit 3.0.32 EXPERIMENTAL by ElminsterAU updated for Skyrim by [url=http://www.nexusmods.com/skyrim/users/156622]Zilav[/url], [url=http://www.nexusmods.com/skyrim/users/1102380]Hlp[/url], and [url=http://www.nexusmods.com/skyrim/users/4147439]Sharlikran[/url].[/color][/size]
+[size=4][color=#FF8C00]TES5Edit 3.0.32 EXPERIMENTAL by [/color][/size][url=http://www.nexusmods.com/newvegas/users/167469/?]ElminsterAU[/url][size=4][color=#FF8C00] updated for Skyrim by [url=http://www.nexusmods.com/skyrim/users/156622]Zilav[/url], [url=http://www.nexusmods.com/skyrim/users/1102380]Hlp[/url], and [url=http://www.nexusmods.com/skyrim/users/4147439]Sharlikran[/url].[/color][/size]
  
 [size=4][b][color=#00BFFF]If possible please post in the Bethesda forum: [url=http://forums.bethsoft.com/topic/1490494-relz-tes5edit/]RELz TES5Edit[/url][/color][/b][/size]
  
 Threads:
 [spoiler]
+[topic=1474325]Thread 19[/topic]
 [topic=1474325]Thread 18[/topic]
 [topic=1466352]Thread 17[/topic]
 [topic=1461810]Thread 16[/topic]
@@ -51,34 +52,33 @@ My Video [url=http://www.youtube.com/watch?v=ciRPWx3OhBQ]Making a Merge Patch.[/
 Rename to TES4Edit.exe to work with Oblivion.
 Rename to FO3Edit.exe to work with Fallout3.
 Rename to FNVEdit.exe to work with New Vegas.
-
+ 
 [size=4][color=#00BFFF]End user documentation:[/color][/size]
  
 Fallout3 [url=http://www.nexusmods.com/fallout3/mods/8629]Training Manual[/url] for FO3Edit (applies to all game versions)
 Fallout New Vegas [url=http://www.nexusmods.com/newvegas/mods/38413]FNVEdit Training Manual[/url] for FNVEdit (applies to all game versions)
-
+[url=http://www.creationkit.com/TES5Edit_Documentation]TES5Edit Documentation[/url] on the CK Wiki (Text representation of FNV Training Manual)
+ 
 [size=4][color=#00BFFF]Developer documentation:[/color][/size]
-
+ 
 Documentation for Fallout 3 and Fallout: New Vegas plugin file formats can be found on [url=https://github.com/WrinklyNinja/fopdoc]GitHub/fopdoc[/url] courtesy of WrinklyNinja
 [LIST]
 [*][url=https://github.com/WrinklyNinja/fopdoc/blob/master/Fallout3/Records.md]Fallout 3 Records[/url][/*]
 [*][url=https://github.com/WrinklyNinja/fopdoc/blob/master/FalloutNV/Records.md]Fallout: New Vegas Records[/url][/*]
 [/LIST]
-
 Documentation for Oblivion and Skyrim file formats can be found on [url=http://www.uesp.net/wiki/Main_Page]UESP[/url] Wiki
 [LIST]
 [*][url=http://www.uesp.net/wiki/Tes5Mod:Mod_File_Format]Skyrim Records[/url][/*]
 [*][url=http://www.uesp.net/wiki/Tes4Mod:Mod_File_Format]Oblivion Records[/url][/*]
 [*][url=http://www.uesp.net/wiki/Tes3Mod:File_Format]Morrowind Records[/url] - Morrowind is not supported with xEdit[/*]
 [/LIST]
- 
 [color=#FF8C00]Important for Older Systems:[/color]
 If you get an error about d3dx9_*.dll not being installed, you need to update your DirectX to the most current version. [url=http://www.microsoft.com/en-us/download/details.aspx?id=8109]DirectX End-User Runtimes (June 2010)[/url] or [url=http://www.microsoft.com/en-us/download/details.aspx?id=23611]DirectX End-User Runtimes (March 2008)[/url] or [url=http://www.microsoft.com/en-us/download/details.aspx?id=35]DirectX End-User Runtime Web Installer[/url]. (make sure to install it after unpacking it)
  
 [color=#00BFFF]TES5Edit Updates:[/color]
  
 [color=#FF0000]With each new version of TES5Edit you may want to restore plugins from backups and reclean them. Otherwise any fixes and updates to cleaning process won't take effect.[/color]
-
+ 
 [color=#00BFFF]Version 3.0.32 contains the following changes:[/color]
 [LIST]
 [*]- issue 69: automatic updating of counter fields to reflect the proper amount of elements in containers[/*]
@@ -105,7 +105,7 @@ If you get an error about d3dx9_*.dll not being installed, you need to update yo
 [*]- [FNV] Relocated CELL and WRLD groups at the end of file[/*]
 [*]- [TES4/TES5/FO3/FNV] WRLD offset data OFST definition (when 'Simple records' option is off)[/*]
 [/LIST]
-[color=#00BFFF]Version 3.0.31 contains the following changes:[/color]
+[color=#00bfff]Version 3.0.31 contains the following changes:[/color]
 [spoiler]
 [LIST]
 [*]- esp files can be loaded before esm[/*]
@@ -132,7 +132,7 @@ If you get an error about d3dx9_*.dll not being installed, you need to update yo
 [*]- [FO3/FNV] fixed issues when copying NPC_, definitions update.[/*]
 [/LIST]
 [/spoiler]
-
+ 
 [color=#00BFFF]Version 3.0.30 contains the following changes:[/color]
 [spoiler]
 [LIST]
@@ -162,6 +162,7 @@ If you get an error about d3dx9_*.dll not being installed, you need to update yo
 [*]- ByteArray length increased to 64 bits.[/*]
 [/LIST]
 [/spoiler]
+
 [color=#00BFFF]Version 3.0.29 contains the following changes:[/color]
 [spoiler]
 [LIST]
@@ -200,7 +201,7 @@ If you get an error about d3dx9_*.dll not being installed, you need to update yo
 [*]- avoid firing some cached exception (to ease debugging).[/*]
 [/LIST]
 [/spoiler]
- 
+
 [color=#00BFFF]Version 3.0.28 contains the following changes:[/color]
 [spoiler]
 [LIST]
@@ -213,7 +214,7 @@ If you get an error about d3dx9_*.dll not being installed, you need to update yo
 [*]- Improved scripting functions, new demo scripts[/*]
 [/LIST]
 [/spoiler]
- 
+
 [color=#00BFFF]Version 3.0.27 contains the following changes:[/color]
 [spoiler]
 [LIST]
@@ -222,7 +223,7 @@ If you get an error about d3dx9_*.dll not being installed, you need to update yo
 [*]- Search by FormID/EditorID skips hidden elements[/*]
 [/LIST]
 [/spoiler]
- 
+
 [color=#00BFFF]Version 3.0.26 contains the following changes:[/color]
 [spoiler]
 [LIST]
@@ -272,7 +273,7 @@ If you get an error about d3dx9_*.dll not being installed, you need to update yo
 [*]- Hold CTRL key when expanding a node for full expand[/*]
 [/LIST]
 [/spoiler]
- 
+
 [color=#00BFFF]Version 3.0.23 contains the following changes:[/color]
 [spoiler]
 [LIST]
@@ -302,11 +303,13 @@ If you get an error about d3dx9_*.dll not being installed, you need to update yo
 [*]"Apply Filter for Cleaning" menu. Note that xEdit saves filter settings when you press OK button in filter window, so if you clean plugin and exit the program, your filter settings will be preserved.[/*]
 [*]Filter option for deleted records.[/*]
 [*]Saving messages to [TES5/FNV/FO3/TES4]Edit_log.txt upon exit.[/*]
-[*]Fixed minor bug when Edit can't find game's folder. If your registry settings is invalid due to a Steam bug and Edit is unable to find your game, put it in the game's root folder where the game executable file is (Oblivion.exe, TESV.exe, etc).[/*]
-[*][color=#FF0000]- Reason: The game's Registry entry is missing. This happens to a lot of people, because Steam likes to remove it whenever the game is updated or its game cache is verified. Run the game's launcher to add the Registry entry back again.[/color][/*]
+[*]Fixed minor bug when Edit can't find game's folder.[/*]
 [/LIST]
+
+If your registry settings are invalid due to a Steam bug and Edit is unable to find your game, put it in the game's root folder where the game executable file is (Oblivion.exe, TESV.exe, etc).
+[color=#FF0000]- Reason: The game's Registry entry is missing. This happens to a lot of people, because Steam likes to remove it whenever the game is updated or its game cache is verified. Run the game's launcher to add the Registry entry back again.[/color]
 [/spoiler]
- 
+
 [color=#00BFFF]Version 3.0.22 contains the following changes:[/color]
 [spoiler]
 [LIST]
@@ -328,7 +331,7 @@ If you get an error about d3dx9_*.dll not being installed, you need to update yo
 [*]- [Oblivion] Snowy weather definition fix (thanks to Arthmoor).[/*]
 [/LIST]
 [/spoiler]
- 
+
 [size=4][color=#FF8C00]ToDo List:[/color][/size]
  
 Update Miax’s Tome of FO3Edit for Skyrim.
@@ -372,10 +375,10 @@ Anyone is welcome to download the source to TES5Dump using the instructions belo
  
 [color=#FF8C00][size=4][b]Why do we need TES5Dump:[/b][/size][/color]
  
- 
 [quote name="WrinklyNinja"]
 .snip. TES5Edit isn't the important thing in this scenario, what's important is getting the records decoded, because a whole load of things (Gecko, Bashed Patch, etc) require that, not just TES5Edit...
 [/quote]
+
 [quote name="WrinklyNinja"]
 .snip. Because so much depends on the record decoding, it's sensible to open up the task to as many people as possible. As such, publicly hosting the definitions and the TES5Dump code/program is best for that. The plugin format has historically been documented at UESP.net for previous games, but I'm of the opinion that only verified decoded records should be documented there, so we still need a central location lots of people can read/write to. A SVN repository would be ideal...
 [/quote]
