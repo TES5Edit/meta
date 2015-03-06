@@ -1,34 +1,34 @@
-[color=#00BFFF]TES5Edit 3.0.32 EXPERIMENTAL by ElminsterAU. Updated for Skyrim by Hlp, Zilav and Sharlikran.[/color]
+[color=#00BFFF][size=4]TES5Edit 3.1 EXPERIMENTAL by ElminsterAU. Updated for Skyrim by Hlp, Zilav and Sharlikran.[/size][/color]
 
 [color=#FF0000]This is the tenth update of TES5Edit and is still being updated.  However, it should still be considered experimental.  Make backups of your plugins and report any issues in the official Bethesda thread.  If you have never used TES5Edit, Wiki Pages and basic videos are available.
 
-We only support version 1.9 of Skyrim and version 3.0.32 of TES5Edit.  Update TES5Edit and Skyrim before you post in the forum.[/color]
+We only support version 1.9 of Skyrim and version 3.1 of TES5Edit.  Update TES5Edit and Skyrim before you post in the forum.[/color]
 
-Cleaning Plugins and Master Files - Mod Authors:
-[youtube]UOQO2S6HDBw[/youtube]
-Cleaning Plugins and Master Files - Mod Users:
-[youtube]fw3g_N1jcZQ[/youtube]
-Making a Merge Patch
-[youtube]ciRPWx3OhBQ[/youtube]
+[color=#00BFFF][size=4]Usefull Vidoes: (in alphabetical order by author)
+[/size][/color]
+[color=#00BFFF]GamerPoets's Videos:[/color]
+[youtube]BtLolEgVMTg[/youtube][youtube]eYg_kl2RrZY[/youtube][youtube]i50wxDuEnn0[/youtube][youtube]s3FZ4bMTWgQ[/youtube]
+[color=#00BFFF]Gopher's Videos:[/color]
+[youtube]UOQO2S6HDBw[/youtube][youtube]Re8YBJm9l64[/youtube][youtube]fw3g_N1jcZQ[/youtube]
+[color=#00BFFF]Sharlikran:[/color]
+[youtube]-yWtfzXGOP0[/youtube]
 
+[size=4][color=#00BFFF]Updates on CK Wiki Pages:[/color][/size]
 [color=#FF0000]Note: These are all a work in Progress.[/color]
 
-[color=#00BFFF]Updates on CK Wiki Pages:[/color]
-[list]
-[*] [url=http://www.creationkit.com/Category:TES5Edit]TES5Edit[/url]
-[*] [url=http://www.creationkit.com/TES5Edit_Cleaning_Guide_-_TES5Edit]TES5Edit Cleaning Guide[/url]
-[*] [url=http://www.creationkit.com/TES5Edit_Mod_Cleaning_Tutorial]TES5Edit Mod Cleaning Tutorial[/url]
-[*] [url=http://www.creationkit.com/Skyrim_Dirty_Plugins_List]TES5Edit Skyrim Dirty Plugins List[/url]
-[*] [url=http://www.creationkit.com/TES5Edit_Scripting_Functions]TES5Edit Scripting Functions[/url] [Wip] - Thanks to Turulo for starting it.  Last update 10-13-2013 by Mator
-[/list]
+[url=http://www.creationkit.com/Category:TES5Edit]TES5Edit[/url]
+[url=http://www.creationkit.com/TES5Edit_Cleaning_Guide_-_TES5Edit]TES5Edit Cleaning Guide[/url]
+[url=http://www.creationkit.com/TES5Edit_Mod_Cleaning_Tutorial]TES5Edit Mod Cleaning Tutorial[/url]
+[url=http://www.creationkit.com/Skyrim_Dirty_Plugins_List]TES5Edit Skyrim Dirty Plugins List[/url]
+[url=http://www.creationkit.com/TES5Edit_Scripting_Functions]TES5Edit Scripting Functions[/url] [Wip] - Thanks to Turulo for starting it.  Last update 10-13-2013 by Mator
 
-[color=#00BFFF]TES5Edit is now Available in Chinese:[/color]
+[size=4][color=#00BFFF]TES5Edit is now Available in Chinese:[/color][/size]
 You can download the translation by [url=http://skyrim.nexusmods.com/users/2541088]bluesky404 [/url][url=http://skyrim.nexusmods.com/mods/37228]here[/url].
 
 [url=http://forums.bethsoft.com/topic/1490494-relz-tes5edit/]Official Bethesda Forum[/url]: Best place to ask technical questions related to the inner workings of TES5Edit.
 [url=http://forums.bethsoft.com/topic/1425445-relz-tes5edit-plugin-cleaning-emporium]TES5Edit Plugin Cleaning Emporium[/url]: Best place to ask questions related to cleaning plugins. Both modders and the closed beta testers post here often.
 
-[color=#00BFFF]Current Documentation:[/color]
+[size=4][color=#00BFFF]Current Documentation:[/color][/size]
 
 [url=http://fallout3.nexusmods.com/mods/8629]Fallout3 Training Manual[/url] for FO3Edit (applies to all game versions)
 [url=http://newvegas.nexusmods.com/mods/38413]FNVEdit Training Manual[/url] for FNVEdit (applies to all game versions)
@@ -83,7 +83,30 @@ Contacting the mod authors is probably the last thing you should do after encoun
 
 We understand that sometimes updates to programs break things.  Please use the updates with caution.  However, please use them and then report issues so we can improve the program.  Our goal is to make all versions as bug free as possible and introduce new features that are useful for the modding community for all the Bethesda games this utility supports.
 
-[color=#00BFFF]TES5Edit Updates:[/color]
+[size=4][color=#00BFFF]TES5Edit Updates:[/color][/size]
+
+[color=#00BFFF]Version 3.1.0 contains the following changes:[/color]
+
+- speed optimizations
+- fixed memory leaks
+- fixed sorting of INFOs in DIAL
+- fixed float values rounding
+- advanced ModGroups feature
+- drag&drop and "Remove from selected records" support for individual flags
+- fonts are changeable in Options
+- new scripting functions
+- new script auto execution mode with -script:"test.pas" switch or when renamed to (TES4|TES5|FO3|FNV)Script.exe
+- xEdit associates itself with *.tes5pas, *.tes4pas, *.fo3pas and *.fnvpas extensions
+- load Mod Organizer profile internally using command line parameter -moprofile:<profilename>
+- faster -quickshowconflicts switch processing
+- new -O: parameter to set the output folder for TES4LODGen generation (much faster), for example "-O:..\ModOrganizer\mods\Generated DistantLOD"
+- [FO3/FNV] Optional hiding of templated actor fields
+- [FNV] Don't undelete refs of TREEs with LOD, bug in the game engine causes a crash
+- [TES5] TES5LODGen, in right click menu -> Other -> Generate LOD
+- [TES5] Weapon/Armor/Ammunition spreadsheets
+- [TES5] BODT/BOD2 and different VMAD version objects are now lined up for conflict resolution
+- [TES5] Improved DOBJ handling
+- [TES5] Record header flags depend on record type
 
 [color=#00BFFF]Version 3.0.32 contains the following changes:[/color]
 
@@ -317,8 +340,3 @@ Q: I have the following errors with one of my plugins what do I do?
 [00:43] Background Loader: Contained subrecords: EDID BODT RNAM DNAM MOD2 MO2T MOD3 MO3T MOD4 MO4T MOD5 MO5T SNDD NAM0 NAM1 NAM2 NAM3 MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL 
 
 A: I have seen that occur with plugins made with the ReProccer, NPC Editor, and older buggy versions of TESVSnip.  Usually TESVSnip 4.2 or 4.3.x.  TESVSnip never used the proper compression which is ZLib so the files are improperly compressed or they were left uncompressed.  No matter how the plugin was made it will cause issues durring game play.  You can either continue to use them but they may cause game instability, report the errors to the author so they can be addressed, or uninstall them.
-
-ToDo List:
-
-Update Miax’s Tome of FO3Edit to be TES5Edit's documentation.
-Update NAVM, NAVI, and their subrecords.
