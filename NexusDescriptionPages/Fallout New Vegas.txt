@@ -1,8 +1,8 @@
 [color=#00BFFF][size=4]FNVEdit 3.1 EXPERIMENTAL by ElminsterAU. Updated for Skyrim by Hlp, Zilav and Sharlikran.[/size][/color]
 
-[color=#FF0000]This is the eleventh update of FNVEdit and is still being updated. Remember to make backups of your plugins.  If you have never used FNVEdit, Wiki Pages and basic videos are available.
+[color=#FF0000]This is the eleventh update of TES4Edit and is still being updated. Remember to make backups of your plugins.  If you have never used TES4Edit, Wiki Pages and basic videos are available.[/color]
 
-[color=#00BFFF][size=4]Usefull Vidoes: (in alphabetical order by author)
+[color=#00BFFF][size=4]Usefull Vidoes: (in alphabetical order by author)[/color][/size]
 [color=#00BFFF]Gopher's Videos:[/color]
 [youtube]qVKe51dRm2M[/youtube]
 
@@ -16,6 +16,7 @@ Users are expected to use common sense, read previous posts, look through the Wi
 [url=http://newvegas.nexusmods.com/mods/38413]FNVEdit Training Manual[/url] for FNVEdit (applies to all game versions)
 
 If you would like to contribute to the conversion of the Fallout New Vegas documentation please visit the [url=http://www.creationkit.com/TES5Edit_Documentation]TES5Edit Documentation pages[/url] on the CK Wiki. Your help is greatly appreciated.
+
 [url=http://forums.bethsoft.com/topic/1122569-relzbetawipz-fnvedit]Official Bethesda Forum[/url]: Best place to ask technical questions related to the inner workings of FNVEdit.
 
 [color=#00BFFF]DirectX Information:[/color]

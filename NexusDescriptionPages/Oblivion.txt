@@ -1,9 +1,9 @@
 [color=#00BFFF][size=4]TES4Edit 3.1 EXPERIMENTAL by ElminsterAU. Updated for Skyrim by Hlp, Zilav and Sharlikran.[/size][/color]
 
-[color=#FF0000]This is the eleventh update of TES4Edit and is still being updated. Remember to make backups of your plugins.  If you have never used TES4Edit, Wiki Pages and basic videos are available.
+[color=#FF0000]This is the eleventh update of TES4Edit and is still being updated. Remember to make backups of your plugins.  If you have never used TES4Edit, Wiki Pages and basic videos are available.[/color]
 
-[color=#00BFFF][size=4]Usefull Vidoes: (in alphabetical order by author)
-[/size][/color]
+[color=#00BFFF][size=4]Usefull Vidoes: (in alphabetical order by author)[/size][/color]
+
 [color=#00BFFF]Gopher's Videos:[/color]
 [youtube]qVKe51dRm2M[/youtube]
 This is for FNVEdit but it still applies to TES4Edit.
