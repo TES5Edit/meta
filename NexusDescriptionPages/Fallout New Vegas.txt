@@ -22,6 +22,32 @@ We understand that sometimes updates to programs break things.  Please use the u
 
 [color=#FF0000]With each new version of FNVEdit you may want to restore plugins from backups and reclean them. Otherwise any fixes and updates to cleaning process won't take effect.[/color]
 
+[color=#00BFFF]Version 3.0.32 contains the following changes:[/color]
+
+- issue 69: automatic updating of counter fields to reflect the proper amount of elements in containers
+- issue 149: FormID indexes in master file header ONAM forms
+- issue 162: reference rotation angle normalization (TES4LODGen hanging on several mods)
+- hotkeys in plugins selection window (Enter - confirm, numpad '+' select all, '-' select none, '*' invert)
+- hold Shift while starting xEdit to skip restoring window state (for users stuck with xEdit outside of viewable desktop area)
+- hold Shift while clicking OK in plugins selection window for one time skipping of building references for all plugins
+- exclude building references for plugins list available in options
+- option to display integer values of flags and enumerations (off by default)
+- Ctrl+C copies only Node text to clipboard, Esc closes the View window
+- definitions update for all games to reduce false positives when checking for errors
+- custom scripted filtering, demo 'Apply custom scripted filter.pas'
+- new scripting functions and scripts: Weather Editor script (Ctrl+W), Worldspace Browser (Alt+F3)
+- scripted persistent bookmarking of records: Ctrl+1..5 to set a bookmark, Alt+1..5 to go back
+- removing offset data in WRLD is optional now, 'on' by default
+- [TES5] TES5LODGen (beta version, has several issues)
+- [TES5] renamed armor addon nodes (added slot numbers), please update your scripts if needed
+- [TES5] Record definitions update (WTHR, DOBJ, NAVM, VMAD papyrus data, GetEventData condition), improved NavMeshes (thanks to jonwd7)
+- [TES5] Added VMAD (papyrus scripts) to TREE, and LVLG (global) to LVLN. They can't be edited in CK, but it supports them and they confirmed to work in game
+- [TES4] Added XRGD subrecord to REFR, INFO flags update
+- [FO3] Do not remove PLD2 subrecord in PACK (as in FNV)
+- [FNV] BPTD update to support body parts without BPTN name
+- [FNV] Relocated CELL and WRLD groups at the end of file
+- [TES4/TES5/FO3/FNV] WRLD offset data OFST definition (when 'Simple records' option is off)
+
 [color=#00BFFF]Version 3.0.31 contains the following changes:[/color]
 
 - esp files can be loaded before esm
@@ -39,7 +65,7 @@ We understand that sometimes updates to programs break things.  Please use the u
 - [TES5] optional switch to resolve aliases (show ID and name)
 - [TES5] fixed error when copying PACK record
 - [TES5] 'Default' water height instead of '-2147483648.00000' is being added to CELLs with water but no XCLW subrecord
-- [TES5] renamed "WRLD\Object bounds" element, please update scripts if needed
+- [TES5] renamed "WRLDObject bounds" element, please update scripts if needed
 - [TES5] merged patch improvements and fixes
 - [TES4] updated INFO record definition to fix flags
 - [TES4] fixed PGRR subrecord corruption in pathgrids when saving
@@ -390,16 +416,8 @@ This version contains no major new functionality, but a number of bugfixes. Upda
 [*]When setting/resetting the persistent flag on references in exterior cells the record is correctly moved between the main worldspace cell and the appropriate (based on position) grid cell
 [*]Undeleting a record (removing the deleted flag) now copies all values from the master record and (in case of a reference record) correctly moves the record into the correct child group
 [*]New function "Undelete and Disable References" finds all reference records marked as deleted and:
-- Undeletes it
-- Sets "Initially Disabled" flag
-- Sets Z Position to -30000
-- Removes Persistent flag if present (this makes sure that the Initially "Initially Disabled" flag and changed Z Position is not overridden by values already stored in the save game. Also makes sure that if the mod is uninstalled the object gets reset to vanilla position and enable state).
-- Removes the XESP (Enable Parent) subrecord (this is required to make sure that the "Initially Disabled" flag has any effect)
-- Removes the XTEL (Teleport/Door Portal) subrecord (this is required to prevent GECK/CS from complaining about references to non-persistent objects)
-[*]Records in child groups (exterior CELLs in WRLDs, References in CELLs, INFOs in DIALs) now show an additional "virtual" field in the first row which specifies the Record that owns the child group they are contained in. This has 2 functions:
-- Records that are moved into a different owner (e.g. a Reference moved from a child worldspace into the parent worldspace) but without any changes to their contents will no longer be classified as "Identical to Master" as this virtual field takes part in normal conflict detection. This prevents problems where such records have been faultily removed by the "Remove "Identical to Master" Records" function
-- The virtual field is editable. This allows moving records to a different owner.
-[*]Lots of small changes and enhancements all over the place that I've forgotten to write down ;)
+- Undeletes it- Sets "Initially Disabled" flag- Sets Z Position to -30000- Removes Persistent flag if present (this makes sure that the Initially "Initially Disabled" flag and changed Z Position is not overridden by values already stored in the save game. Also makes sure that if the mod is uninstalled the object gets reset to vanilla position and enable state).- Removes the XESP (Enable Parent) subrecord (this is required to make sure that the "Initially Disabled" flag has any effect)- Removes the XTEL (Teleport/Door Portal) subrecord (this is required to prevent GECK/CS from complaining about references to non-persistent objects)[*]Records in child groups (exterior CELLs in WRLDs, References in CELLs, INFOs in DIALs) now show an additional "virtual" field in the first row which specifies the Record that owns the child group they are contained in. This has 2 functions:
+- Records that are moved into a different owner (e.g. a Reference moved from a child worldspace into the parent worldspace) but without any changes to their contents will no longer be classified as "Identical to Master" as this virtual field takes part in normal conflict detection. This prevents problems where such records have been faultily removed by the "Remove "Identical to Master" Records" function- The virtual field is editable. This allows moving records to a different owner.[*]Lots of small changes and enhancements all over the place that I've forgotten to write down ;)
 [/list]
 
 [color=#00BFFF]What's new in 2.0.10:[/color]
