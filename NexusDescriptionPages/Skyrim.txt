@@ -66,7 +66,7 @@ It is not always necessary to clean all your plugins every time a new version of
 
 As TES5Edit becomes more widely used in the Skyrim community it has become a concern that many people still want to use the utility in place of the Construction Kit.  This is still not recommended.  We work hard to make TES5Edit as accurate as possible but development is directly related to the plugins themselves.  TES5Edit can not replicate all the changes that the CK will make.  Attack Data is the best example.  Merely checking or unchecking certain things for an NPC will alter the attack data dramatically.  We won't be adding those types of things to TES5Edit.
 
- Please understand that we don't directly support the use of TES5Edit to make major changes to plugins.  Aside from all the things the CK will change in a plugin that TES5Edit cannot replicate, Skyrim will react the same way to changes made to a Plugin with TES5Edit.  If you have questions about changes you are making to plugins or how Skyrim will react to your changes please direct all questions to the [url=http://forums.bethsoft.com/forum/184-the-creation-kit/]Skyrim CK thread[/url].  All changes you could make in the CK are covered in the [url=http://www.creationkit.com/Main_Page]CK Wiki[/url] and therefore don't need to be covered in any TES5Edit documentation.
+Please understand that we don't directly support the use of TES5Edit to make major changes to plugins.  Aside from all the things the CK will change in a plugin that TES5Edit cannot replicate, Skyrim will react the same way to changes made to a Plugin with TES5Edit.  If you have questions about changes you are making to plugins or how Skyrim will react to your changes please direct all questions to the [url=http://forums.bethsoft.com/forum/184-the-creation-kit/]Skyrim CK thread[/url].  All changes you could make in the CK are covered in the [url=http://www.creationkit.com/Main_Page]CK Wiki[/url] and therefore don't need to be covered in any TES5Edit documentation.
 
 [color=#00BFFF]Merging Plugins:[/color]
 
@@ -228,7 +228,7 @@ Misc:
 
 [color=#00BFFF]Version 3.0.27 contains the following changes:[/color]
 
-- [TES5] Updated dialog subtypes for patch 1.8
+- [TES5] Updated dialogue subtypes for patch 1.8
 - Localize/delocalize utf8 strings. Translation is disabled, highly recommended to use StrEdit or other specialized tools instead
 - Search by FormID/EditorID skips hidden elements
 

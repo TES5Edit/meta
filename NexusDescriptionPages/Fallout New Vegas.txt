@@ -148,7 +148,7 @@ Misc:
 
 [color=#00BFFF]Version 3.0.27 contains the following changes:[/color]
 
-- [TES5] Updated dialog subtypes for patch 1.8
+- [TES5] Updated dialogue subtypes for patch 1.8
 - Localize/delocalize utf8 strings. Translation is disabled, highly recommended to use StrEdit or other specialized tools instead
 - Search by FormID/EditorID skips hidden elements
 
@@ -340,11 +340,11 @@ Minor update only adding support for DEST(ruction) subrecord in TERM(inal) recor
 [*]Automatically update ONAM subrecord when saving ESM's (header flag, not file extension)
 [*]New function to copy idle animations:
 [*]Complete overhaul of the "build unreachable info" function
-[*]Bugfix to prevent dialog choices from being sorted by FormID
+[*]Bugfix to prevent dialogue choices from being sorted by FormID
 [*]The "Remove 'Identical to Master' Record" function will now remove also the NAVM records (but only NAVM records) that show up as benign conflict, so there is no longer a need to do that manually
 [*]The Undelete and Disable function will set the Player ACHR [00000014] as Enable Parent with the "Set Enable State to Opposite of Parent" flag set. Given that the player should never end up being disabled, that should properly remove them from the gameworld, even if they are persistent references and the enabled state has already been stored in the savegame.
 [*]The Undelete and Disable function will also now properly list all affected references, just like the "Remove 'Identical to Master' Record" function does.
-[*]The selection dialog now allows double clicking an entry, this will automatically select that entry, deselect all others and close the dialog as if the OK button had been pressed.
+[*]The selection dialogue now allows double clicking an entry, this will automatically select that entry, deselect all others and close the dialogue as if the OK button had been pressed.
 [/list]
 
 [b]Some important notes about the "Build Reachable Info" function[/b]
@@ -384,11 +384,11 @@ If you apply a filter after the "build reachable info" you can filter "by not re
 
 That last point about the NAVMs requires some explanation.
 
-A NAVM record starts off with a list of Vertices. Each Vertex being a 3D point (x/y/z). An identifier for each vertex is implicitly given by it's position in this list of verticies.
+A NAVM record starts off with a list of Vertices. Each Vertex being a 3D point (x/y/z). An identifier for each vertex is implicitly given by it's position in this list of vertices.
 
 This is followed by a list of triangles. Again, an identifier for each triangle is implicitly given by it's position in this list of triangles.
 
-For each triangle there are 3 verticies, specified by their position in the vertex list. And there are 3 triangles which touch this triangle along the 3 edges, specified by their position in the triangle list.
+For each triangle there are 3 vertices, specified by their position in the vertex list. And there are 3 triangles which touch this triangle along the 3 edges, specified by their position in the triangle list.
 
 The edges are a bit more complex because it is possible that a triangle borders a triangle that is defined in another NAVM. To support this there are 3 flags on each triangle (for the 3 edges) which specify if the triangle on that edge is an external connection. If this flag is set, then the number stored for that edge is NOT an index into the triangle list, instead it's an index into the "External Connections" list.
 
@@ -432,10 +432,10 @@ This version contains no major new functionality, but a number of bugfixes. Upda
 [*]IMAD records are now supported
 [*]FormID references to any value < 0x800 will no longer result in an error (The game engine defines objects with FormIDs < 0x800 implicitly in code)
 [*]Insert and Delete Key are working in both navigation treeview and detail view (under the same conditions under which Add and Remove is available in the context menu)
-[*]F2 is working on the navigation treeview and opens the "Change FormID" dialog
+[*]F2 is working on the navigation treeview and opens the "Change FormID" dialogue
 [/list]
 
-When started it will automatically find your Fallout 3 Data directory. You then get a dialog to select which modules you want to load with the current selection from your plugins.txt as default value. Once you have confirmed that dialog the selected modules will start loading in the background. Depending on your system it should take 30 seconds to a few minutes (!) for all modules to load. You can follow the progress in the message window. (Don't panic if it seems to freeze, it just takes time).
+When started it will automatically find your Fallout 3 Data directory. You then get a dialogue to select which modules you want to load with the current selection from your plugins.txt as default value. Once you have confirmed that dialogue the selected modules will start loading in the background. Depending on your system it should take 30 seconds to a few minutes (!) for all modules to load. You can follow the progress in the message window. (Don't panic if it seems to freeze, it just takes time).
 
 The tree view on the left side now shows all active modules in their correct load order. By navigating that tree view you can look at every single record in any of your modules.
 
