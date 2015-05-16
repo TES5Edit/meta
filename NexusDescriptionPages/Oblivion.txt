@@ -27,19 +27,13 @@ Users are expected to use common sense, read previous posts, look through the Wi
 
 If you would like to contribute to the conversion of the Fallout New Vegas documentation please visit the [url=http://www.creationkit.com/TES5Edit_Documentation]TES5Edit Documentation pages[/url] on the CK Wiki. Your help is greatly appreciated.
 
-[color=#00BFFF]DirectX Information:[/color]
+[color=#00BFFF]Important for Older Systems:[/color]
 
-As of 3.1 this is no longer needed.
-
-If you are using a version prior to 3.1 and you get an error about d3dx9_*.dll not being installed, you need to update your DirectX to the most current version.  [url=http://www.microsoft.com/en-us/download/details.aspx?id=8109]DirectX End-User Runtimes (June 2010)[/url] or [url=http://www.microsoft.com/en-us/download/details.aspx?id=23611]DirectX End-User Runtimes (March 2008)[/url] or [url=http://www.microsoft.com/en-us/download/details.aspx?id=35]DirectX End-User Runtime Web Installer[/url].  (make sure to install it after unpacking it)
+If you get an error about d3dx9_*.dll not being installed, you need to update your DirectX to the most current version.  The most current (March 2008) version [url=http://www.microsoft.com/en-us/download/details.aspx?id=35]DirectX End-User Runtime Web Installer[/url] or for [url=here: http://www.microsoft.com/en-us/download/details.aspx?id=23611]DirectX End-User Runtimes Redistributable[/url]. (make sure to install it after unpacking it)
 
 [color=#00BFFF]Previous versions such as FO3Edit, FNVEdit, TES4Edit:[/color]
 
 We understand that sometimes updates to programs break things.  Please use the updates with caution.  However, please use them and then report issues so we can improve the program.  Our goal is to make all versions as bug free as possible and introduce new features that are useful for the modding community for all the Bethesda games this utility supports.
-
-[color=#00BFFF]Future of TES4Edit:[/color]
-
-We appreciate all the thanks and support from the community.  We would like to thank all the users that made bug reports on the Nexus or in the Bug Tracker.  Zilav and Hlp continue to make various bug fixes and improvements.  Zilav has added more scripting functions while Hlp is still working on having a working Save game editor.  Currently early testing only allows you to view save games.  We were very excited recently when ElminsterAU had some time to make some optimizations to the code.  The program loads plugins faster then before and uses less memory.
 
 [color=#00BFFF]TES4Edit Updates:[/color]
 
@@ -319,14 +313,14 @@ Merged Patch creation and FO3MasterUpdate are now considered stable.
 
 [color=#00BFFF]What's new in version 2.4.9 EXPERIMENTAL:[/color]
 
-[list][*]Merged Patch generation has been overhauled. It should now correctly handle RACE records (and in general any record with 2 or more mergeable lists) and OrderedList FLSTs.[*]MIC2 subrecords are now supported in ARMA and ARMO records[*]DEST(ruction) subrecords are now correctly handled in WEAP and CONT records[/list]
-
-[color=#00BFFF]What's new in version 2.4.3 BETA:[/color]
-
-[list][*]DEST(ruction) subrecords are now support in NPC record[*]MICO subrecords are now supported in ARMA records[*]Context Menu on file node in navigation treeview -> Renumber FormIDs from...[/list]
-
-Renumber FormIDs from will change all FormIDs of records belonging to that file (but not any override records which might be contained in that file) so that they start at the specified value. 
-
+[list][*]Merged Patch generation has been overhauled. It should now correctly handle RACE records (and in general any record with 2 or more mergeable lists) and OrderedList FLSTs.
+[*]MIC2 subrecords are now supported in ARMA and ARMO records
+[*]DEST(ruction) subrecords are now correctly handled in WEAP and CONT records
+[/list][color=#00BFFF]What's new in version 2.4.3 BETA:[/color]
+[list][*]DEST(ruction) subrecords are now support in NPC record
+[*]MICO subrecords are now supported in ARMA records
+[*]Context Menu on file node in navigation treeview -> Renumber FormIDs from...
+[/list]Renumber FormIDs from will change all FormIDs of records belonging to that file (but not any override records which might be contained in that file) so that they start at the specified value. 
 This is useful if you have multiple modules that you plan to update in the future, but also want to always provide a merged version (e.g. using FO3Plugin). By assigning non overlapping FormIDs to the different modules, you can make sure that no FormID reassignment of conflicting FormIDs has to take place when merging.
 
 WARNING: changing the FormIDs of an existing module will make it savegame incompatible and will break any other module that uses this module as master. If you have any dependant modules, you need to have them all loaded into FO3Edit at the time you change to FormIDs so that they will all be updated accordingly.
@@ -344,13 +338,13 @@ This version adds a support for FO3MasterUpdate mode.
 MasterUpdate mode is the solution to the bugs introduced in Patch 1.5 in regards to plugins.
 
 When running in MasterUpdate mode, the following operations are performed without further user interaction:
-[list][*]all modules in the Data folder are assigned into 2 groups, masters and plugins, based on their file extension (.esm or .esp)[*]the modules in each group are sorted by file modification date/time[*]all module files are redated, first all masters, then all plugins, in 1 minute intervals[*]all [b]active[/b] modules are then loaded, the ESM flag set in the file header if not yet present, the ONAM subrecords build if required[*]any temporary overriding worldspace record that have at least one previous version that is persistent are marked as persistent[*]all modified modules are saved.[/list]
-
-This makes it possible to take an existing setup using patch 1.4 or older which contains mods that are broken by the bugs in patch 1.5 to be updated to patch 1.5, and used with existing savegames without being messed up by the bugs in Patch 1.5.
-
-As this function is still considered EXPERIMENTAL, please make sure you have a full backup of your Data folder and your save games before using it. 
-
-I'll not take any responsibility if your computer explodes, gains sentience and start chasing you around the room or anything else that might happen.
+[list][*]all modules in the Data folder are assigned into 2 groups, masters and plugins, based on their file extension (.esm or .esp)
+[*]the modules in each group are sorted by file modification date/time
+[*]all module files are redated, first all masters, then all plugins, in 1 minute intervals
+[*]all [b]active[/b] modules are then loaded, the ESM flag set in the file header if not yet present, the ONAM subrecords build if required
+[*]any temporary overriding worldspace record that have at least one previous version that is persistent are marked as persistent
+[*]all modified modules are saved.
+[/list]This makes it possible to take an existing setup using patch 1.4 or older which contains mods that are broken by the bugs in patch 1.5 to be updated to patch 1.5, and used with existing savegames without being messed up by the bugs in Patch 1.5.As this function is still considered EXPERIMENTAL, please make sure you have a full backup of your Data folder and your save games before using it. I'll not take any responsibility if your computer explodes, gains sentience and start chasing you around the room or anything else that might happen.
 
 You can run it in MasterUpdate mode by passing the parameter "-masterupdate" when running FO3Edit.exe or you can simply rename the exe to FO3MasterUpdate.exe
 
@@ -362,21 +356,21 @@ Minor update only adding support for DEST(ruction) subrecord in TERM(inal) recor
 
 [color=#00BFFF]What's new in 2.3.0 EXPERIMENTAL:[/color]
 
-[list][*]support for BrokenSteel.esm and Patch 1.5[*]large number of small fixes to record definition, resulting in many more cases of records correctly identified as "identical to master" and a very significant reduction in potential false positives in the "Check for Errors" function. [*]on the fly conversion of outdated records to the most current format. This means that you will see fields show up as modified that you didn't modify yourself (mainly in Fallout3.esm and the DLC.esm's, GECK created files should already be up to date). It is possible to disable this function by starting FO3Edit with [b]-nofixup[/b] as parameter. It is also possible to just these modifications (but still keep the fixups) by starting FO3Edit with [b]-hidefixup[/b] as paramter.[*]Automatically update ONAM subrecord when saving ESM's (header flag, not file extension)[*]New function to copy idle animations:[*]Complete overhaul of the "build unreachable info" function[*]Bugfix to prevent dialog choices from being sorted by FormID[*]The "Remove 'Identical to Master' Record" function will now remove also the NAVM records (but only NAVM records) that show up as benign conflict, so there is no longer a need to do that manually[*]The Undelete and Disable function will set the Player ACHR [00000014] as Enable Parent with the "Set Enable State to Opposite of Parent" flag set. Given that the player should never end up being disabled, that should properly remove them from the gameworld, even if they are persistent references and the enabled state has already been stored in the savegame.[*]The Undelete and Disable function will also now properly list all affected references, just like the "Remove 'Identical to Master' Record" function does.[*]The selection dialog now allows double clicking an entry, this will automatically select that entry, deselect all others and close the dialog as if the OK button had been pressed.[/list]
-
-[b]Some important notes about the "Build Reachable Info" function[/b]
-
-After you've run that function, you'll see that some records are displayed striked-through. These records are considered to be "not reachable".
-
-There are some limits to this. The "not reachable" classification is only true if you:
-[list][*]start a new game with exactly the mods you've currently loaded[*]do not use the console in any way[*] there are no FOSE scripts involved that use some dirty tricks to get hold of a reference to something without that something showing up in the SCRO's of the script.[/list]
-
-Also the meaning of "reachable" is sometimes a bit gray. e.g. for Activator's, Statics, Weapons, Armor, and so on it means that the player character should be able to get somewhere from where he can see the object and/or somehow get it into his inventory. For Quests it means that the quest either starts enabled or that there is probably some way how it can become enabled or at least that somewhere the variables belonging to the quest script get accessed. For DIAL's and INFO's it means that it's probably possible to select the topic somewhere or hear the response somewhere. For CELL's and WRLD's it means that the player character is probably somehow able to enter it. And so on.
-
-Now, in the FormLists you might see some things marked as unreachable which do technically have an effect on the player character. e.g. the repair lists will show up as unreachable. The reason for that is that if the repairlist was marked as reachable, it would automatically mark all contained records as reachable. But that's not really right. Just because something can possibly be used to repair an object that the character has doesn't meant that this something can actually ever be acquired by the player. So really, for FormLists the reachable status doesn't mean much either way.
-
-Outside of FormLists, there shouldn't be any false negatives (meaning something marked as unreachable which has an influence on the game).
-
+[list][*]support for BrokenSteel.esm and Patch 1.5
+[*]large number of small fixes to record definition, resulting in many more cases of records correctly identified as "identical to master" and a very significant reduction in potential false positives in the "Check for Errors" function. 
+[*]on the fly conversion of outdated records to the most current format. This means that you will see fields show up as modified that you didn't modify yourself (mainly in Fallout3.esm and the DLC.esm's, GECK created files should already be up to date). It is possible to disable this function by starting FO3Edit with [b]-nofixup[/b] as parameter. It is also possible to just these modifications (but still keep the fixups) by starting FO3Edit with [b]-hidefixup[/b] as paramter.
+[*]Automatically update ONAM subrecord when saving ESM's (header flag, not file extension)
+[*]New function to copy idle animations:
+[*]Complete overhaul of the "build unreachable info" function
+[*]Bugfix to prevent dialog choices from being sorted by FormID
+[*]The "Remove 'Identical to Master' Record" function will now remove also the NAVM records (but only NAVM records) that show up as benign conflict, so there is no longer a need to do that manually
+[*]The Undelete and Disable function will set the Player ACHR [00000014] as Enable Parent with the "Set Enable State to Opposite of Parent" flag set. Given that the player should never end up being disabled, that should properly remove them from the gameworld, even if they are persistent references and the enabled state has already been stored in the savegame.
+[*]The Undelete and Disable function will also now properly list all affected references, just like the "Remove 'Identical to Master' Record" function does.
+[*]The selection dialog now allows double clicking an entry, this will automatically select that entry, deselect all others and close the dialog as if the OK button had been pressed.
+[/list][b]Some important notes about the "Build Reachable Info" function[/b]After you've run that function, you'll see that some records are displayed striked-through. These records are considered to be "not reachable".There are some limits to this. The "not reachable" classification is only true if you:[list][*]start a new game with exactly the mods you've currently loaded
+[*]do not use the console in any way
+[*] there are no FOSE scripts involved that use some dirty tricks to get hold of a reference to something without that something showing up in the SCRO's of the script.
+[/list]Also the meaning of "reachable" is sometimes a bit gray. e.g. for Activator's, Statics, Weapons, Armor, and so on it means that the player character should be able to get somewhere from where he can see the object and/or somehow get it into his inventory. For Quests it means that the quest either starts enabled or that there is probably some way how it can become enabled or at least that somewhere the variables belonging to the quest script get accessed. For DIAL's and INFO's it means that it's probably possible to select the topic somewhere or hear the response somewhere. For CELL's and WRLD's it means that the player character is probably somehow able to enter it. And so on.Now, in the FormLists you might see some things marked as unreachable which do technically have an effect on the player character. e.g. the repair lists will show up as unreachable. The reason for that is that if the repairlist was marked as reachable, it would automatically mark all contained records as reachable. But that's not really right. Just because something can possibly be used to repair an object that the character has doesn't meant that this something can actually ever be acquired by the player. So really, for FormLists the reachable status doesn't mean much either way.Outside of FormLists, there shouldn't be any false negatives (meaning something marked as unreachable which has an influence on the game).
 There can be false positives (something marked as reachable while it's not). e.g. it's possible for a CELL to be considered reachable even though the only way to get there is through a door which can only be opened with a key and the key is not reachable.
 
 Or for an INFO record to be reachable even though non of the conditions attached to the responses could ever possible be true. Or the quest that the INFO belongs to will never be enabled.
@@ -389,10 +383,10 @@ If you apply a filter after the "build reachable info" you can filter "by not re
 
 [color=#00BFFF]What's new in 2.2.3:[/color]
 
-[list][*]Game Settings (GMST) will now be properly resolved based on EditorID, not FormID.[*]Navigation Mesh Info Map (NAVI) will no longer be compared between different modules. While this record has always the same FormID in all modules, it is not actually handled by the engine in the same way as normal records. Instead it contains information that are always only specific to the file that contains it.[*]Navigation Mesh (NAVM) records that are logically identical but physically different are now easier to recognize. [/list]
-
-That last point about the NAVMs requires some explanation.
-
+[list][*]Game Settings (GMST) will now be properly resolved based on EditorID, not FormID.
+[*]Navigation Mesh Info Map (NAVI) will no longer be compared between different modules. While this record has always the same FormID in all modules, it is not actually handled by the engine in the same way as normal records. Instead it contains information that are always only specific to the file that contains it.
+[*]Navigation Mesh (NAVM) records that are logically identical but physically different are now easier to recognize. 
+[/list]That last point about the NAVMs requires some explanation.
 A NAVM record starts off with a list of Vertices. Each Vertex being a 3D point (x/y/z). An identifier for each vertex is implicitly given by it's position in this list of verticies.
 
 This is followed by a list of triangles. Again, an identifier for each triangle is implicitly given by it's position in this list of triangles.
@@ -405,9 +399,9 @@ Each entry in the External Connections list contains the FormID of another NAVM 
 
 GECK has the annoying habit of switching around the order of the entries in this External Connections list. As a result it is possible to have 2 versions of the same NAVM record that "look" different (the External Connections will not match up and the triangles with the index into the external connections list will not match up) but are actually identical.
 
-I've implemented 2 changes:[list][*]When comparing the values for triangle edges which have the "external" flag set, I don't compare the index number, instead the external connection entry is resolved using the index number and the NAVM FormID and the Triangle from that entry are compared. So even if the index numbers in the external connection list have changed, as long as they resolve to the same external triangle they will show up as identical.[*]The complete external connections list has been marked as being "benign conflicts". This is not a problem if there are REAL relevant changes to this list because they will also show up in the triangles list where the relevant edges will now compare as a conflict or override.[/list]
-
-With these changes in place it is now possible to find these NAVMs that are identical but not automatically found using the 'Remove "Identical to Master" Records' function by applying a filter and choosing "by conflict status overall" and only "Benign Conflict". It is still necessary to have a look at these records and make sure that they really fit this pattern (the only parts of these records that show up yellow should be the external connections) before deleting them manually. But it's a lot easier to find them now then it was before.
+I've implemented 2 changes:[list][*]When comparing the values for triangle edges which have the "external" flag set, I don't compare the index number, instead the external connection entry is resolved using the index number and the NAVM FormID and the Triangle from that entry are compared. So even if the index numbers in the external connection list have changed, as long as they resolve to the same external triangle they will show up as identical.
+[*]The complete external connections list has been marked as being "benign conflicts". This is not a problem if there are REAL relevant changes to this list because they will also show up in the triangles list where the relevant edges will now compare as a conflict or override.
+[/list]With these changes in place it is now possible to find these NAVMs that are identical but not automatically found using the 'Remove "Identical to Master" Records' function by applying a filter and choosing "by conflict status overall" and only "Benign Conflict". It is still necessary to have a look at these records and make sure that they really fit this pattern (the only parts of these records that show up yellow should be the external connections) before deleting them manually. But it's a lot easier to find them now then it was before.
 
 It's important to point out here that the interaction between the NAVMs and the NAVI record is so far poorly understood and I can't guarantee that removing NAVM records while leaving the NAVI record untouched is not going to cause problems. Any feedback/experience on this topic would be very welcome.
 
@@ -417,23 +411,23 @@ This version contains no major new functionality, but a number of bugfixes. Upda
 
 [color=#00BFFF]What's new in 2.1.0:[/color]
 
-[list][*]All records with the exception of IMAD and a couple of fields in NAVI and NAVM are fully decoded (non of the undecoded fields contain FormIDs so adding/removing/changing masters is now fully supported)[*]When setting/resetting the persistent flag on references in exterior cells the record is correctly moved between the main worldspace cell and the appropriate (based on position) grid cell[*]Undeleting a record (removing the deleted flag) now copies all values from the master record and (in case of a reference record) correctly moves the record into the correct child group[*]New function "Undelete and Disable References" finds all reference records marked as deleted and:- Undeletes it- Sets "Initially Disabled" flag- Sets Z Position to -30000- Removes Persistent flag if present (this makes sure that the Initially "Initially Disabled" flag and changed Z Position is not overridden by values already stored in the save game. Also makes sure that if the mod is uninstalled the object gets reset to vanilla position and enable state).- Removes the XESP (Enable Parent) subrecord (this is required to make sure that the "Initially Disabled" flag has any effect)- Removes the XTEL (Teleport/Door Portal) subrecord (this is required to prevent GECK/CS from complaining about references to non-persistent objects)[*]Records in child groups (exterior CELLs in WRLDs, References in CELLs, INFOs in DIALs) now show an additional "virtual" field in the first row which specifies the Record that owns the child group they are contained in. This has 2 functions:- Records that are moved into a different owner (e.g. a Reference moved from a child worldspace into the parent worldspace) but without any changes to their contents will no longer be classified as "Identical to Master" as this virtual field takes part in normal conflict detection. This prevents problems where such records have been faultily removed by the "Remove "Identical to Master" Records" function- The virtual field is editable. This allows moving records to a different owner.[*]Lots of small changes and enhancements all over the place that I've forgotten to write down ;)[/list]
-
-[color=#00BFFF]What's new in 2.0.10:[/color]
-
-[list][*]Inplace Editors for Flags, Enums and FormIDs (MAJOR improvement)[*]FormID of DIAL, WRLD and CELL records can now be changed[*]Adding new DIAL, WRLD and CELL records is possible[*]Extensive updates to FO3 record definitions[*]Using the FormID search box now adds a history entry[*]When holding SHIFT while double clicking in the detail view editable elements can be edited[*]IMAD records are now supported[*]FormID references to any value < 0x800 will no longer result in an error (The game engine defines objects with FormIDs < 0x800 implicitly in code)[*]Insert and Delete Key are working in both navigation treeview and detail view (under the same conditions under which Add and Remove is available in the context menu)[*]F2 is working on the navigation treeview and opens the "Change FormID" dialog[/list]
-
-When started it will automatically find your Fallout 3 Data directory. You then get a dialog to select which modules you want to load with the current selection from your plugins.txt as default value. Once you have confirmed that dialog the selected modules will start loading in the background. Depending on your system it should take 30 seconds to a few minutes (!) for all modules to load. You can follow the progress in the message window. (Don't panic if it seems to freeze, it just takes time).
-
-The tree view on the left side now shows all active modules in their correct load order. By navigating that tree view you can look at every single record in any of your modules.
-
-Once a record has been selected the detailed contents of that record is shown on the right side. The detail view shows all versions of the selected record from all modules which contain it. The left most column is the master. The right most column is the module that "wins". This is the version of the record that Fallout 3 sees.
-
-Both the detail view and the record list use the same color coding to signal the conflict state of individual fields (in the detail view) and the record overall (in the record list). 
-
-Background color:
-White - Single Record
-Green - Multiple but no conflict
+[list][*]All records with the exception of IMAD and a couple of fields in NAVI and NAVM are fully decoded (non of the undecoded fields contain FormIDs so adding/removing/changing masters is now fully supported)
+[*]When setting/resetting the persistent flag on references in exterior cells the record is correctly moved between the main worldspace cell and the appropriate (based on position) grid cell
+[*]Undeleting a record (removing the deleted flag) now copies all values from the master record and (in case of a reference record) correctly moves the record into the correct child group
+[*]New function "Undelete and Disable References" finds all reference records marked as deleted and:- Undeletes it- Sets "Initially Disabled" flag- Sets Z Position to -30000- Removes Persistent flag if present (this makes sure that the Initially "Initially Disabled" flag and changed Z Position is not overridden by values already stored in the save game. Also makes sure that if the mod is uninstalled the object gets reset to vanilla position and enable state).- Removes the XESP (Enable Parent) subrecord (this is required to make sure that the "Initially Disabled" flag has any effect)- Removes the XTEL (Teleport/Door Portal) subrecord (this is required to prevent GECK/CS from complaining about references to non-persistent objects)
+[*]Records in child groups (exterior CELLs in WRLDs, References in CELLs, INFOs in DIALs) now show an additional "virtual" field in the first row which specifies the Record that owns the child group they are contained in. This has 2 functions:- Records that are moved into a different owner (e.g. a Reference moved from a child worldspace into the parent worldspace) but without any changes to their contents will no longer be classified as "Identical to Master" as this virtual field takes part in normal conflict detection. This prevents problems where such records have been faultily removed by the "Remove "Identical to Master" Records" function- The virtual field is editable. This allows moving records to a different owner.
+[*]Lots of small changes and enhancements all over the place that I've forgotten to write down ;)
+[/list][color=#00BFFF]What's new in 2.0.10:[/color][list][*]Inplace Editors for Flags, Enums and FormIDs (MAJOR improvement)
+[*]FormID of DIAL, WRLD and CELL records can now be changed
+[*]Adding new DIAL, WRLD and CELL records is possible
+[*]Extensive updates to FO3 record definitions
+[*]Using the FormID search box now adds a history entry
+[*]When holding SHIFT while double clicking in the detail view editable elements can be edited
+[*]IMAD records are now supported
+[*]FormID references to any value < 0x800 will no longer result in an error (The game engine defines objects with FormIDs < 0x800 implicitly in code)
+[*]Insert and Delete Key are working in both navigation treeview and detail view (under the same conditions under which Add and Remove is available in the context menu)
+[*]F2 is working on the navigation treeview and opens the "Change FormID" dialog
+[/list]When started it will automatically find your Fallout 3 Data directory. You then get a dialog to select which modules you want to load with the current selection from your plugins.txt as default value. Once you have confirmed that dialog the selected modules will start loading in the background. Depending on your system it should take 30 seconds to a few minutes (!) for all modules to load. You can follow the progress in the message window. (Don't panic if it seems to freeze, it just takes time).The tree view on the left side now shows all active modules in their correct load order. By navigating that tree view you can look at every single record in any of your modules.Once a record has been selected the detailed contents of that record is shown on the right side. The detail view shows all versions of the selected record from all modules which contain it. The left most column is the master. The right most column is the module that "wins". This is the version of the record that Fallout 3 sees.Both the detail view and the record list use the same color coding to signal the conflict state of individual fields (in the detail view) and the record overall (in the record list). Background color:White - Single RecordGreen - Multiple but no conflict
 Yellow - Override without conflict
 Red - Conflict
 
