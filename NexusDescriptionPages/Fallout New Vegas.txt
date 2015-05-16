@@ -1,26 +1,58 @@
-[color=#00BFFF]FNVEdit 3.0.31 EXPERIMENTAL by ElminsterAU updates updates by TES5Edit team.[/color]
+[color=#00BFFF][size=4]FNVEdit 3.1 EXPERIMENTAL by ElminsterAU. Updated for Skyrim by Hlp, Zilav and Sharlikran.[/size][/color]
 
-This is a an experimental release of FNVEdit. If you don't know what FNVEdit is, you probably shouldn't be using it yet.  Although we have put a great deal of work into it be aware of what you are doing.  Ask questions in the official Bethesda thread "[url=http://forums.bethsoft.com/topic/1418434-relz-tes5edit-plugin-cleaning-emporium]TES5Edit Plugin Cleaning Emporium[/url]" or "[url=http://forums.bethsoft.com/topic/1419201-relz-tes5edit][RELz] TES5Edit[/url]"  As always backup you plugins, save games, and use with caution. (at your own risk)
+[color=#FF0000]This is the eleventh update of FNVEdit and is still being updated. Remember to make backups of your plugins.  If you have never used FNVEdit, Wiki Pages and basic videos are available.
 
-Mod Makers, Cleaning your mods:
+[color=#00BFFF][size=4]Usefull Vidoes: (in alphabetical order by author)
+[color=#00BFFF]Gopher's Videos:[/color]
 [youtube]qVKe51dRm2M[/youtube]
 
-[url=http://forums.bethsoft.com/topic/1419201-relz-tes5edit]Official Bethesda Forum[/url]: Best place to ask technical questions related to the inner workings of TES5Edit.
-[url=http://forums.bethsoft.com/topic/1418434-relz-tes5edit-plugin-cleaning-emporium]TES5Edit Plugin Cleaning Emporium[/url]: Best place to ask questions related to cleaning plugins. Both modders and the closed beta testers post here often.
+[size=4][color=#00BFFF]Self Help Resources:[/color][/size]
 
-[url=http://newvegas.nexusmods.com/mods/38413]Fallout New Vegas Training Manual for FNVEdit[/url]: Applies to all game versions
+Users are expected to use common sense, read previous posts, look through the Wiki pages, watch the videos, and look through the Training Manual before posting.  If it's already covered somewhere you may not get any answer to your question at all.
 
-[color=#00BFFF]Important for Older Systems:[/color]
+[size=4][color=#00BFFF]Current Documentation:[/color][/size]
 
-If you get an error about d3dx9_*.dll not being installed, you need to update your DirectX to the most current version.  The most current (March 2008) version [url=http://www.microsoft.com/en-us/download/details.aspx?id=35]DirectX End-User Runtime Web Installer[/url] or for [url=here: http://www.microsoft.com/en-us/download/details.aspx?id=23611]DirectX End-User Runtimes Redistributable[/url]. (make sure to install it after unpacking it)
+[url=http://fallout3.nexusmods.com/mods/8629]Fallout3 Training Manual[/url] for FO3Edit (applies to all game versions)
+[url=http://newvegas.nexusmods.com/mods/38413]FNVEdit Training Manual[/url] for FNVEdit (applies to all game versions)
+
+If you would like to contribute to the conversion of the Fallout New Vegas documentation please visit the [url=http://www.creationkit.com/TES5Edit_Documentation]TES5Edit Documentation pages[/url] on the CK Wiki. Your help is greatly appreciated.
+[url=http://forums.bethsoft.com/topic/1122569-relzbetawipz-fnvedit]Official Bethesda Forum[/url]: Best place to ask technical questions related to the inner workings of FNVEdit.
+
+[color=#00BFFF]DirectX Information:[/color]
+
+As of 3.1 this is no longer needed.
+
+If you are using a version prior to 3.1 and you get an error about d3dx9_*.dll not being installed, you need to update your DirectX to the most current version.  [url=http://www.microsoft.com/en-us/download/details.aspx?id=8109]DirectX End-User Runtimes (June 2010)[/url] or [url=http://www.microsoft.com/en-us/download/details.aspx?id=23611]DirectX End-User Runtimes (March 2008)[/url] or [url=http://www.microsoft.com/en-us/download/details.aspx?id=35]DirectX End-User Runtime Web Installer[/url].  (make sure to install it after unpacking it)
 
 [color=#00BFFF]Previous versions such as FO3Edit, FNVEdit, TES4Edit:[/color]
 
 We understand that sometimes updates to programs break things.  Please use the updates with caution.  However, please use them and then report issues so we can improve the program.  Our goal is to make all versions as bug free as possible and introduce new features that are useful for the modding community for all the Bethesda games this utility supports.
 
-[color=#00BFFF]FNVEdit Updates:[/color]
+[size=4][color=#00BFFF]FNVEdit Updates:[/color][/size]
+[color=#FF0000]With each new version you may want to restore plugins from backups and reclean them. Otherwise any fixes and updates to cleaning process won't take effect.[/color]
 
-[color=#FF0000]With each new version of FNVEdit you may want to restore plugins from backups and reclean them. Otherwise any fixes and updates to cleaning process won't take effect.[/color]
+[color=#00BFFF]Version 3.1.0 contains the following changes:[/color]
+
+- speed optimizations
+- fixed memory leaks
+- fixed sorting of INFOs in DIAL
+- fixed float values rounding
+- advanced ModGroups feature
+- drag&drop and "Remove from selected records" support for individual flags
+- fonts are changeable in Options
+- new scripting functions
+- new script auto execution mode with -script:"test.pas" switch or when renamed to (TES4|TES5|FO3|FNV)Script.exe
+- xEdit associates itself with *.tes5pas, *.tes4pas, *.fo3pas and *.fnvpas extensions
+- load Mod Organizer profile internally using command line parameter -moprofile:<profilename>
+- faster -quickshowconflicts switch processing
+- new -O: parameter to set the output folder for TES4LODGen generation (much faster), for example "-O:..\ModOrganizer\mods\Generated DistantLOD"
+- [FO3/FNV] Optional hiding of templated actor fields
+- [FNV] Don't undelete refs of TREEs with LOD, bug in the game engine causes a crash
+- [TES5] TES5LODGen, in right click menu -> Other -> Generate LOD
+- [TES5] Weapon/Armor/Ammunition spreadsheets
+- [TES5] BODT/BOD2 and different VMAD version objects are now lined up for conflict resolution
+- [TES5] Improved DOBJ handling
+- [TES5] Record header flags depend on record type
 
 [color=#00BFFF]Version 3.0.32 contains the following changes:[/color]
 
@@ -60,7 +92,7 @@ We understand that sometimes updates to programs break things.  Please use the u
 - new scripting functions, UI controls and scripts: Assets manager, Assets browser (Ctrl+F3)
 - [TES5] added XCZR (encounter zone reference?) subrecord in REFR
 - [TES5] added PMIS record
-- [TES5] removed obsolete model subrecords: MODB, MOSD, FGGA, FGGS, FGTS 
+- [TES5] removed obsolete model subrecords: MODB, MOSD, FGGA, FGGS, FGTS
 - [TES5] updated LCTN definition (showed errors in USKP before)
 - [TES5] optional switch to resolve aliases (show ID and name)
 - [TES5] fixed error when copying PACK record
@@ -77,7 +109,7 @@ We understand that sometimes updates to programs break things.  Please use the u
 
 - Added Prev/NextMember for Record union. Use after adding a new one to select the apropriate.
 - Search for required master extended upward.
-- Added a second command line parameter to specify the game's ini file location. 
+- Added a second command line parameter to specify the game's ini file location.
 - Ctrl+A to select all in editor window.
 - "Jump to" option in record's header popup menu.
 - Enable/disable autosaves in options.
@@ -99,7 +131,7 @@ Misc:
 - Code modified for compatibility with both Delphi XE and XE3 in the same source files.
 - Added BaseName property so unsorted arrays can contain structured unions.
 - ByteArray length increased to 64 bits.
-  
+
 [color=#00BFFF]Version 3.0.29 contains the following changes:[/color]
 
 - [url=http://forums.nexusmods.com/index.php?/topic/921884-icons-for-tes5edit/]New Icon[/url] provided by moiman100.
@@ -120,8 +152,8 @@ Fixes:
 - Compare to will not overwrite an existing file, nor will it leave temporary files behind.
 - issue 125 : Condition added are no longer empty.
 - issue 121 : Changing FormID of Region causes severe bugs. Reference building is delayed to after the change is done. Non region reference XCLR record are no longer removed.
-- issue 120/118 : Reference not updated while adding a master. Reference lookup during the addition was sometimes unreliable. 
-- issue 117 : Bug in script Undelete and Disable References.pas 
+- issue 120/118 : Reference not updated while adding a master. Reference lookup during the addition was sometimes unreliable.
+- issue 117 : Bug in script Undelete and Disable References.pas
 - issue 112 : Option "Simple Record" malfunctioning.
 - issue 111 : AV when saving subrecords with prefixed arrays. Sizing and memory allocation are done properly during every phase.
 - issue 108 : Very slow saving after editing ESM flag. Background updating limited as much as possible during saves.
@@ -180,6 +212,8 @@ Misc:
 - Full expand key modifier changed to ALT
 
 [color=#00BFFF]Version 3.0.24 contains the following changes:[/color]
+
+[color=#FF0000]NOTE Changes to Merged Patch: 3.0.24 of TES5Edit only adds Containers and Leveled Lists to Merged Patches.[/color]
 
 - [TES5] Updated load order handling when plugins.txt is empty and no BOSS info is available
 - [TES5] Fixed event name definition in QUST
@@ -289,7 +323,7 @@ Merged Patch creation and FO3MasterUpdate are now considered stable.
 [*]Context Menu on file node in navigation treeview -> Renumber FormIDs from...
 [/list]
 
-Renumber FormIDs from will change all FormIDs of records belonging to that file (but not any override records which might be contained in that file) so that they start at the specified value. 
+Renumber FormIDs from will change all FormIDs of records belonging to that file (but not any override records which might be contained in that file) so that they start at the specified value.
 
 This is useful if you have multiple modules that you plan to update in the future, but also want to always provide a merged version (e.g. using FO3Plugin). By assigning non overlapping FormIDs to the different modules, you can make sure that no FormID reassignment of conflicting FormIDs has to take place when merging.
 
@@ -303,7 +337,7 @@ Fallout3.Hardcoded.esp has been renamed.
 
 [color=#00BFFF]What's new in 2.4.0 EXPERIMENTAL:[/color]
 
-This version adds a support for FO3MasterUpdate mode. 
+This version adds a support for FO3MasterUpdate mode.
 
 MasterUpdate mode is the solution to the bugs introduced in Patch 1.5 in regards to plugins.
 
@@ -319,7 +353,7 @@ When running in MasterUpdate mode, the following operations are performed withou
 
 This makes it possible to take an existing setup using patch 1.4 or older which contains mods that are broken by the bugs in patch 1.5 to be updated to patch 1.5, and used with existing savegames without being messed up by the bugs in Patch 1.5.
 
-As this function is still considered EXPERIMENTAL, please make sure you have a full backup of your Data folder and your save games before using it. 
+As this function is still considered EXPERIMENTAL, please make sure you have a full backup of your Data folder and your save games before using it.
 
 I'll not take any responsibility if your computer explodes, gains sentience and start chasing you around the room or anything else that might happen.
 
@@ -335,7 +369,7 @@ Minor update only adding support for DEST(ruction) subrecord in TERM(inal) recor
 
 [list]
 [*]support for BrokenSteel.esm and Patch 1.5
-[*]large number of small fixes to record definition, resulting in many more cases of records correctly identified as "identical to master" and a very significant reduction in potential false positives in the "Check for Errors" function. 
+[*]large number of small fixes to record definition, resulting in many more cases of records correctly identified as "identical to master" and a very significant reduction in potential false positives in the "Check for Errors" function.
 [*]on the fly conversion of outdated records to the most current format. This means that you will see fields show up as modified that you didn't modify yourself (mainly in Fallout3.esm and the DLC.esm's, GECK created files should already be up to date). It is possible to disable this function by starting FO3Edit with [b]-nofixup[/b] as parameter. It is also possible to just these modifications (but still keep the fixups) by starting FO3Edit with [b]-hidefixup[/b] as paramter.
 [*]Automatically update ONAM subrecord when saving ESM's (header flag, not file extension)
 [*]New function to copy idle animations:
@@ -379,7 +413,7 @@ If you apply a filter after the "build reachable info" you can filter "by not re
 [list]
 [*]Game Settings (GMST) will now be properly resolved based on EditorID, not FormID.
 [*]Navigation Mesh Info Map (NAVI) will no longer be compared between different modules. While this record has always the same FormID in all modules, it is not actually handled by the engine in the same way as normal records. Instead it contains information that are always only specific to the file that contains it.
-[*]Navigation Mesh (NAVM) records that are logically identical but physically different are now easier to recognize. 
+[*]Navigation Mesh (NAVM) records that are logically identical but physically different are now easier to recognize.
 [/list]
 
 That last point about the NAVMs requires some explanation.
@@ -407,7 +441,7 @@ It's important to point out here that the interaction between the NAVMs and the 
 
 [color=#00BFFF]What's new in 2.2.0:[/color]
 
-This version contains no major new functionality, but a number of bugfixes. Update is highly recommended. 
+This version contains no major new functionality, but a number of bugfixes. Update is highly recommended.
 
 [color=#00BFFF]What's new in 2.1.0:[/color]
 
@@ -441,7 +475,7 @@ The tree view on the left side now shows all active modules in their correct loa
 
 Once a record has been selected the detailed contents of that record is shown on the right side. The detail view shows all versions of the selected record from all modules which contain it. The left most column is the master. The right most column is the module that "wins". This is the version of the record that Fallout 3 sees.
 
-Both the detail view and the record list use the same color coding to signal the conflict state of individual fields (in the detail view) and the record overall (in the record list). 
+Both the detail view and the record list use the same color coding to signal the conflict state of individual fields (in the detail view) and the record overall (in the record list).
 
 Background color:
 White - Single Record
@@ -463,7 +497,7 @@ Conflict detection is not simply based on the existence of multiple records for 
 
 The record tree view on the left side has a context menu where you can activate filtering. Filtering is based on the same conflict categorization as the background and text color.
 
-Yes, filtering will take a while. It has to decode and compare the contents of every single record which turns up more then once. 
+Yes, filtering will take a while. It has to decode and compare the contents of every single record which turns up more then once.
 
 Be warned, this program uses a lot of memory. Performance on a system with less then 2GB of RAM will most likely be sub-optimal. Activating the filtering uses even more memory.
 

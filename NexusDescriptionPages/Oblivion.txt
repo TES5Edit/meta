@@ -1,6 +1,6 @@
 [color=#00BFFF][size=4]TES4Edit 3.1 EXPERIMENTAL by ElminsterAU. Updated for Skyrim by Hlp, Zilav and Sharlikran.[/size][/color]
 
-[color=#FF0000]This is the eleventh update of TES5Edit and is still being updated. Remember to make backups of your plugins.  If you have never used TES5Edit, Wiki Pages and basic videos are available.
+[color=#FF0000]This is the eleventh update of TES4Edit and is still being updated. Remember to make backups of your plugins.  If you have never used TES4Edit, Wiki Pages and basic videos are available.
 
 [color=#00BFFF][size=4]Usefull Vidoes: (in alphabetical order by author)
 [/size][/color]
@@ -11,16 +11,6 @@ This is for FNVEdit but it still applies to TES4Edit.
 [size=4][color=#00BFFF]Self Help Resources:[/color][/size]
 
 Users are expected to use common sense, read previous posts, look through the Wiki pages, watch the videos, and look through the Training Manual before posting.  If it's already covered somewhere you may not get any answer to your question at all.
-
-[size=4][color=#00BFFF]Wiki Pages:[/color][/size] 
-
-[color=#FF0000]Note: These are all a work in Progress.[/color]
-
-[url=http://www.creationkit.com/Category:TES5Edit]TES5Edit[/url]
-[url=http://www.creationkit.com/TES5Edit_Cleaning_Guide_-_TES5Edit]TES5Edit Cleaning Guide[/url]
-[url=http://www.creationkit.com/TES5Edit_Mod_Cleaning_Tutorial]TES5Edit Mod Cleaning Tutorial[/url]
-[url=http://www.creationkit.com/Skyrim_Dirty_Plugins_List]TES5Edit Skyrim Dirty Plugins List[/url]
-[url=http://www.creationkit.com/TES5Edit_Scripting_Functions]TES5Edit Scripting Functions[/url] [Wip] - Thanks to Turulo for starting it.  Last update 10-13-2013 by Mator
 
 [size=4][color=#00BFFF]Current Documentation:[/color][/size]
 
@@ -42,7 +32,6 @@ If you are using a version prior to 3.1 and you get an error about d3dx9_*.dll n
 We understand that sometimes updates to programs break things.  Please use the updates with caution.  However, please use them and then report issues so we can improve the program.  Our goal is to make all versions as bug free as possible and introduce new features that are useful for the modding community for all the Bethesda games this utility supports.
 
 [color=#00BFFF]TES4Edit Updates:[/color]
-
 [color=#FF0000]With each new version you may want to restore plugins from backups and reclean them. Otherwise any fixes and updates to cleaning process won't take effect.[/color]
 
 [color=#00BFFF]Version 3.1.0 contains the following changes:[/color]
