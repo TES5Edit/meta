@@ -54,17 +54,17 @@ We appreciate all the thanks and support from the community.  We would like to t
 
 I am still seeing many posts where people state that they have cleaned multiple plugins at the same time.  I understand that the cleaning process seems tedious and it would be nice to fire off the program to clean 200 plugins while you go do something else.  Unfortunately there are still no plans on adding an automated way to clean multiple plugins or access to TES5Edit from the command line.  Being there to see what errors might be reported during the cleaning process ensure that you are aware of potential issues that can lead to instability while playing Skyrim.
 
-Cleaning multiple plugins at once can and will lead to erroneous cleaning and can in many cases lead to unwanted crashes to the desktop.  Please look at the Cleaning Tutorial or watch the cleaning videos.  They show both loading the plugins you know are required or show only loading the one plugin and letting TES5Edit load any other dependencies.  After applying the filter for cleaning, clean only the one plugin.  It is imperative that the process is repeated for each individual separate plugin that you wish to clean.  
+Cleaning multiple plugins at once can and will lead to erroneous cleaning and can in many cases lead to unwanted crashes to the desktop.  Please look at the Cleaning Tutorial or watch the cleaning videos.  They show both loading the plugins you know are required or show only loading the one plugin and letting TES5Edit load any other dependencies.  After applying the filter for cleaning, clean only the one plugin.  It is imperative that the process is repeated for each individual separate plugin that you wish to clean.
 
 Currently cleaning a plugin involves indexing over a million references at times.  When only the required plugins are loaded then the cleaning is accurate.  If unnecessary plugins are involved those become part of the index and could cause the plugin to lose important and required data.  Without human intervention too many issues during the cleaning process would go unnoticed and make troubleshooting game issues related to plugins even more difficult then it already is.
 
 [color=#00BFFF]Cleaning Plugins and official DLC when a new version of TES5Edit is released:[/color]
 
-It is not always necessary to clean all your plugins every time a new version of TES5Edit is released.  More often then not an ITM does not cause Skyrim to crash.  What can lead to crashes are deleted references which are resolved as part of the cleaning process when you choose "Undelete and Disable References".  It is still important to remove "Identical to Master" records for a more stable game but not as vital to eliminating crashes.  The other causes for crashes are corrupt plugins, poorly written and managed scripts, and missing files required by the plugin.  If Skyrim is working for you leave things the way they are.  It's not really required unless we make some major update in the cleaning process.  If you feel you must clean the official Bethesda ESM files then restore any backups you have.  However, it is much more reliable to use the Verify Cache feature from Steam.  
+It is not always necessary to clean all your plugins every time a new version of TES5Edit is released.  More often then not an ITM does not cause Skyrim to crash.  What can lead to crashes are deleted references which are resolved as part of the cleaning process when you choose "Undelete and Disable References".  It is still important to remove "Identical to Master" records for a more stable game but not as vital to eliminating crashes.  The other causes for crashes are corrupt plugins, poorly written and managed scripts, and missing files required by the plugin.  If Skyrim is working for you leave things the way they are.  It's not really required unless we make some major update in the cleaning process.  If you feel you must clean the official Bethesda ESM files then restore any backups you have.  However, it is much more reliable to use the Verify Cache feature from Steam.
 
 [color=#00BFFF]Using TES5Edit in place of the CK:[/color]
 
-As TES5Edit becomes more widely used in the Skyrim community it has become a concern that many people still want to use the utility in place of the Construction Kit.  This is still not recommended.  We work hard to make TES5Edit as accurate as possible but development is directly related to the plugins themselves.  TES5Edit can not replicate all the changes that the CK will make.  Attack Data is the best example.  Merely checking or unchecking certain things for an NPC will alter the attack data dramatically.  We won't be adding those types of things to TES5Edit. 
+As TES5Edit becomes more widely used in the Skyrim community it has become a concern that many people still want to use the utility in place of the Construction Kit.  This is still not recommended.  We work hard to make TES5Edit as accurate as possible but development is directly related to the plugins themselves.  TES5Edit can not replicate all the changes that the CK will make.  Attack Data is the best example.  Merely checking or unchecking certain things for an NPC will alter the attack data dramatically.  We won't be adding those types of things to TES5Edit.
 
  Please understand that we don't directly support the use of TES5Edit to make major changes to plugins.  Aside from all the things the CK will change in a plugin that TES5Edit cannot replicate, Skyrim will react the same way to changes made to a Plugin with TES5Edit.  If you have questions about changes you are making to plugins or how Skyrim will react to your changes please direct all questions to the [url=http://forums.bethsoft.com/forum/184-the-creation-kit/]Skyrim CK thread[/url].  All changes you could make in the CK are covered in the [url=http://www.creationkit.com/Main_Page]CK Wiki[/url] and therefore don't need to be covered in any TES5Edit documentation.
 
@@ -77,6 +77,7 @@ There is still a demand for merging multiple plugins but merging plugins is stil
 We understand that sometimes updates to programs break things.  Please use the updates with caution.  However, please use them and then report issues so we can improve the program.  Our goal is to make all versions as bug free as possible and introduce new features that are useful for the modding community for all the Bethesda games this utility supports.
 
 [size=4][color=#00BFFF]TES5Edit Updates:[/color][/size]
+[color=#FF0000]With each new version you may want to restore plugins from backups and reclean them. Otherwise any fixes and updates to cleaning process won't take effect.[/color]
 
 [color=#00BFFF]Version 3.1.0 contains the following changes:[/color]
 
@@ -139,7 +140,7 @@ We understand that sometimes updates to programs break things.  Please use the u
 - new scripting functions, UI controls and scripts: Assets manager, Assets browser (Ctrl+F3)
 - [TES5] added XCZR (encounter zone reference?) subrecord in REFR
 - [TES5] added PMIS record
-- [TES5] removed obsolete model subrecords: MODB, MOSD, FGGA, FGGS, FGTS 
+- [TES5] removed obsolete model subrecords: MODB, MOSD, FGGA, FGGS, FGTS
 - [TES5] updated LCTN definition (showed errors in USKP before)
 - [TES5] optional switch to resolve aliases (show ID and name)
 - [TES5] fixed error when copying PACK record
@@ -156,7 +157,7 @@ We understand that sometimes updates to programs break things.  Please use the u
 
 - Added Prev/NextMember for Record union. Use after adding a new one to select the apropriate.
 - Search for required master extended upward.
-- Added a second command line parameter to specify the game's ini file location. 
+- Added a second command line parameter to specify the game's ini file location.
 - Ctrl+A to select all in editor window.
 - "Jump to" option in record's header popup menu.
 - Enable/disable autosaves in options.
@@ -199,8 +200,8 @@ Fixes:
 - Compare to will not overwrite an existing file, nor will it leave temporary files behind.
 - issue 125 : Condition added are no longer empty.
 - issue 121 : Changing FormID of Region causes severe bugs. Reference building is delayed to after the change is done. Non region reference XCLR record are no longer removed.
-- issue 120/118 : Reference not updated while adding a master. Reference lookup during the addition was sometimes unreliable. 
-- issue 117 : Bug in script Undelete and Disable References.pas 
+- issue 120/118 : Reference not updated while adding a master. Reference lookup during the addition was sometimes unreliable.
+- issue 117 : Bug in script Undelete and Disable References.pas
 - issue 112 : Option "Simple Record" malfunctioning.
 - issue 111 : AV when saving subrecords with prefixed arrays. Sizing and memory allocation are done properly during every phase.
 - issue 108 : Very slow saving after editing ESM flag. Background updating limited as much as possible during saves.
@@ -231,7 +232,6 @@ Misc:
 - Localize/delocalize utf8 strings. Translation is disabled, highly recommended to use StrEdit or other specialized tools instead
 - Search by FormID/EditorID skips hidden elements
 
-
 [color=#00BFFF]Version 3.0.26 contains the following changes:[/color]
 
 - 3.0.26 includes the changes in 3.0.25
@@ -255,7 +255,7 @@ Misc:
 - "Options" menu
 - "Analyze Log" menu, currently supports
   * Skyrim papyrus log
-  * Oblivion RuntimeScriptProfiler log http://www.oblivion.nexusmods.com/mods/41863
+  * [url=http://www.oblivion.nexusmods.com/mods/41863]Oblivion RuntimeScriptProfiler by shadeMe[/url] logs
 - Moved several not so often used menus to the "Other" submenu (Build ref/reachable, Merged Parch, Seq File, Localization, etc.)
 - Full expand key modifier changed to ALT
 
@@ -330,6 +330,6 @@ Q: I have the following errors with one of my plugins what do I do?
 
 [00:43] Background Loader: Error: record ARMA contains unexpected (or out of order) subrecord MODL
 [00:43] Background Loader: Errors were found in: ShieldofYsgramorDraugrAA [ARMA:01001001]
-[00:43] Background Loader: Contained subrecords: EDID BODT RNAM DNAM MOD2 MO2T MOD3 MO3T MOD4 MO4T MOD5 MO5T SNDD NAM0 NAM1 NAM2 NAM3 MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL 
+[00:43] Background Loader: Contained subrecords: EDID BODT RNAM DNAM MOD2 MO2T MOD3 MO3T MOD4 MO4T MOD5 MO5T SNDD NAM0 NAM1 NAM2 NAM3 MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL MODL
 
 A: I have seen that occur with plugins made with the ReProccer, NPC Editor, and older buggy versions of TESVSnip.  Usually TESVSnip 4.2 or 4.3.x.  TESVSnip never used the proper compression which is ZLib so the files are improperly compressed or they were left uncompressed.  No matter how the plugin was made it will cause issues durring game play.  You can either continue to use them but they may cause game instability, report the errors to the author so they can be addressed, or uninstall them.
