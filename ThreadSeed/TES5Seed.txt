@@ -1,10 +1,10 @@
-[size=5][color=#00BFFF][url=http://www.nexusmods.com/skyrim/mods/25859/]TES5Edit 3.1.1 EXPERIMENTAL[/url] is now available on the Nexus.[/color][/size]
+[size=5][color=#00BFFF][url=http://www.nexusmods.com/skyrim/mods/25859/]TES5Edit 3.1.2 EXPERIMENTAL[/url] is now available on the Nexus.[/color][/size]
 
-[size=4][color=#FF0000]This is the ninth update of TES5Edit and is still being updated. However, it should still be considered experimental. Make backups of your plugins and report any issues in the official Bethesda thread. If you have never used TES5Edit, Wiki Pages and basic videos are available. Feel free to ask about plugin cleaning in the official [color=#00BFFF][url=http://forums.bethsoft.com/topic/1425445-relz-tes5edit-plugin-cleaning-emporium/]RELz TES5Edit Plugin Cleaning Emporium[/url][/color]. If you require technical assistance the official [color=#00BFFF][url=http://forums.bethsoft.com/topic/1490494-relz-tes5edit/]RELz TES5Edit[/url][/color] thread is best for that. As always backup you plugins, save games, and use with caution. (at your own risk)[/color][/size]
+[size=4][color=#FF0000]This is the thirteenth update of TES5Edit and is still being updated. However, it should still be considered experimental. Make backups of your plugins and report any issues in the official Bethesda thread. If you have never used TES5Edit, Wiki Pages and basic videos are available. Feel free to ask about plugin cleaning in the official [color=#00BFFF][url=http://forums.bethsoft.com/topic/1425445-relz-tes5edit-plugin-cleaning-emporium/]RELz TES5Edit Plugin Cleaning Emporium[/url][/color]. If you require technical assistance the official [color=#00BFFF][url=http://forums.bethsoft.com/topic/1490494-relz-tes5edit/]RELz TES5Edit[/url][/color] thread is best for that. As always backup you plugins, save games, and use with caution. (at your own risk)[/color][/size]
 
 [size=4][color=#FF0000]NOTE: This is the actual version of FNVEdit, FO3Edit, and TES4Edit by ElminsterAU being updated for Skyrim. He has allowed us to host both TES5Dump and TES5Edit under the same MPL.[/color][/size]
 
-[size=4][color=#FF8C00]TES5Edit 3.0.32 EXPERIMENTAL by [/color][/size][url=http://www.nexusmods.com/newvegas/users/167469/?]ElminsterAU[/url][size=4][color=#FF8C00] updated for Skyrim by [url=http://www.nexusmods.com/skyrim/users/156622]Zilav[/url], [url=http://www.nexusmods.com/skyrim/users/1102380]Hlp[/url], and [url=http://www.nexusmods.com/skyrim/users/4147439]Sharlikran[/url].[/color][/size]
+[size=4][color=#FF8C00]TES5Edit 3.1.2 EXPERIMENTAL by [/color][/size][url=http://www.nexusmods.com/newvegas/users/167469/?]ElminsterAU[/url][size=4][color=#FF8C00] updated for Skyrim by [url=http://www.nexusmods.com/skyrim/users/156622]Zilav[/url], [url=http://www.nexusmods.com/skyrim/users/1102380]Hlp[/url], and [url=http://www.nexusmods.com/skyrim/users/4147439]Sharlikran[/url].[/color][/size]
 
 [size=4][b][color=#00BFFF]If possible please post in the Bethesda forum: [url=http://forums.bethsoft.com/topic/1490494-relz-tes5edit/]RELz TES5Edit[/url][/color][/b][/size]
 
@@ -80,8 +80,14 @@ If you get an error about d3dx9_*.dll not being installed, you need to update yo
 [color=#00BFFF]TES5Edit Updates:[/color]
 
 [color=#FF0000]With each new version of TES5Edit you may want to restore plugins from backups and reclean them. Otherwise any fixes and updates to cleaning process won't take effect.[/color]
-
+[color=#00BFFF]Version 3.1.2 contains the following changes:[/color]
+[LIST]
+[*]- improved record definitions[/*]
+[*]- [TES5] LODGen support for glowing meshes[/*]
+[*]- [TES5] TES5LODGen avoids generating trees LOD for duplicate FormID ref numbers, bug in Skyrim causes them to not switch off properly in the game[/*]
+[/LIST]
 [color=#00BFFF]Version 3.1.1 contains the following changes:[/color]
+[spoiler]
 [LIST]
 [*]- [FO3/FNV] Added PBEA record[/*]
 [*]- improved record definitions[/*]
@@ -90,6 +96,7 @@ If you get an error about d3dx9_*.dll not being installed, you need to update yo
 [*]- xLODGen impoved removing of mesh faces under landscape LOD[/*]
 [*]- FNVLODGen and FO3LODGen[/*]
 [/LIST]
+[/spoiler]
 [color=#00BFFF]Version 3.1.0 contains the following changes:[/color]
 [spoiler]
 [LIST]
@@ -411,7 +418,7 @@ When started it will automatically find your Skyrim Data directory. You then get
 Anyone is welcome to download the source to TES5Dump using the instructions below.
 
 [color=#FF8C00][size=4][b]Why do we need TES5Dump:[/b][/size][/color]
- 
+
 [quote name="WrinklyNinja"]
 .snip. TES5Edit isn't the important thing in this scenario, what's important is getting the records decoded, because a whole load of things (Gecko, Bashed Patch, etc) require that, not just TES5Edit...
 [/quote]
@@ -421,8 +428,6 @@ Anyone is welcome to download the source to TES5Dump using the instructions belo
 [/quote]
 
 [color=#FF8C00][size=4][b]How TES5Dump works:[/b][/size][/color]
-
-
 
 [quote name="ElminsterAU"]
 TES5Dump Is a command line utility that can take an esm/esp file, decode it, and give a human readable dump to the console. The output can be redirected to a file, so you could use:
